@@ -1,0 +1,6 @@
+editor default
+
+Tag {
+[ @${value} ]
+
+}

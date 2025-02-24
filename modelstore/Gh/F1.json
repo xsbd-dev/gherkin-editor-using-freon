@@ -1,0 +1,114 @@
+{
+   "serializationFormatVersion": "2023.1",
+   "languages": [
+      {
+         "key": "-key-Starter",
+         "version": "2023.1"
+      }
+   ],
+   "nodes": [
+      {
+         "id": "ID-8",
+         "classifier": {
+            "language": "-key-Starter",
+            "version": "2023.1",
+            "key": "-key-Feature"
+         },
+         "properties": [
+            {
+               "property": {
+                  "language": "-key-Starter",
+                  "version": "2023.1",
+                  "key": "-key-Feature-name"
+               },
+               "value": "F1"
+            }
+         ],
+         "containments": [
+            {
+               "containment": {
+                  "language": "-key-Starter",
+                  "version": "2023.1",
+                  "key": "-key-Feature-tags"
+               },
+               "children": [
+                  "ID-9"
+               ]
+            },
+            {
+               "containment": {
+                  "language": "-key-Starter",
+                  "version": "2023.1",
+                  "key": "-key-Feature-journeys"
+               },
+               "children": []
+            },
+            {
+               "containment": {
+                  "language": "-key-Starter",
+                  "version": "2023.1",
+                  "key": "-key-Feature-rules"
+               },
+               "children": []
+            },
+            {
+               "containment": {
+                  "language": "-key-Starter",
+                  "version": "2023.1",
+                  "key": "-key-Feature-comments"
+               },
+               "children": []
+            }
+         ],
+         "references": [],
+         "annotations": [],
+         "parent": null
+      },
+      {
+         "id": "ID-9",
+         "classifier": {
+            "language": "-key-Starter",
+            "version": "2023.1",
+            "key": "-key-TagLine"
+         },
+         "properties": [],
+         "containments": [
+            {
+               "containment": {
+                  "language": "-key-Starter",
+                  "version": "2023.1",
+                  "key": "-key-TagLine-tags"
+               },
+               "children": [
+                  "ID-10"
+               ]
+            }
+         ],
+         "references": [],
+         "annotations": [],
+         "parent": "ID-8"
+      },
+      {
+         "id": "ID-10",
+         "classifier": {
+            "language": "-key-Starter",
+            "version": "2023.1",
+            "key": "-key-Tag"
+         },
+         "properties": [
+            {
+               "property": {
+                  "language": "-key-Starter",
+                  "version": "2023.1",
+                  "key": "-key-Tag-value"
+               },
+               "value": "tag1"
+            }
+         ],
+         "containments": [],
+         "references": [],
+         "annotations": [],
+         "parent": "ID-9"
+      }
+   ]
+}

@@ -1,0 +1,90 @@
+language Starter
+
+model StarterModel {
+    name: identifier;
+    gherkin: Feature[];
+}
+
+modelunit Feature {
+    tags?: TagLine[]; 
+    name: identifier;
+    journeys: Scenario[];
+    rules: Rule[];
+    comments: CommentLine[];
+}
+
+concept Rule {
+    tags?: TagLine[]; 
+    title: string;
+    description?: string;
+    examples: Scenario[];
+}
+
+concept Scenario {
+    label: ScenarioLabel;
+    tags?: TagLine[]; 
+    title: string;
+    description?: string;
+    steps: Step[];
+    examples?: ExampleTable[];
+}
+
+limited ScenarioLabel {
+    Scenario;
+    Example;
+}
+
+concept Step {
+    keyword: StepType;
+    text: string;
+    table?: DataTable;
+}
+
+limited StepType {
+    name: identifier;
+    Given;
+    When;
+    Then;
+    And;
+    But;
+    Star = {name: "*"};    /* should show as asterisk everywhere */
+}
+
+concept DataTable {
+    rows: TableRow[];
+}
+
+concept TableRow {
+    cells: TableCell[];
+}
+
+concept TableCell {
+    value: string;
+}
+
+concept ExampleTable {
+    tags?: TagLine[]; 
+    title: string;
+    description?: string;
+    rows: TableRow[];
+}
+
+/* one or more lines each containing zero or more tags */
+
+concept TagLine {
+    tags: Tag[]; 
+}
+
+concept Tag {
+    value: string;
+}
+
+concept CommentLine {
+    location: Location;
+    text: string;
+}
+
+concept Location {
+    line: number;
+    column: number;
+}
