@@ -9,7 +9,7 @@
     "build": "npm run generate && tsc",
     "build-app": "rollup -c",
     "dev": "cross-env NODE_PORT=8001 rollup -c -w",
-    "start": "sirv public",
+    "start": "sirv --port 8002 public",
     "validate": "svelte-check",
     "errors-only": "svelte-check --threshold error",
     "generate": "freon all -d src/defs -o src/freon",
