@@ -47,7 +47,7 @@ limited StepType {
     Then;
     And;
     But;
-    Star = {name: "*"};    /* should show as asterisk everywhere */
+    Star = {name: "*"}    /* should show as asterisk everywhere */
 }
 
 concept DataTable {
