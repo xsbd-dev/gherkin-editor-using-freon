@@ -11,7 +11,7 @@ import { configureLoggers } from "./loggers.js";
 WebappConfigurator.getInstance().setEditorEnvironment(LanguageEnvironment.getInstance());
 WebappConfigurator.getInstance().setServerCommunication(ServerCommunication.getInstance());
 
-ServerCommunication.getInstance().SERVER_IP = 'localhost'
+ServerCommunication.getInstance().SERVER_IP = 'http://localhost'
 ServerCommunication.getInstance().nodePort = '8001'
 
 configureExternals()
