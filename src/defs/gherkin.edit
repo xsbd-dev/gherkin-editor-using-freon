@@ -1,5 +1,26 @@
 editor default
 
+Feature {[
+    [fragment feature]: ${self.name}
+        
+    ${self.journeys} 
+    ]
+    fragment feature [Feature]
+}
+
+Scenario {[
+    [fragment scenario]: ${self.title}
+    ${self.steps} 
+    ]
+    fragment scenario [Scenario]
+}
+
+Step {[
+    [fragment steptype] ${self.text}    
+    ]
+    fragment steptype [${self.keyword}] 
+}
+
 Tag {
 [ @${value} ]
 
